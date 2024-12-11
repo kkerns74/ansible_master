@@ -1,0 +1,10 @@
+---
+- hosts: ios
+  #gather_facts: false
+  tasks: 
+    -  name:  Print ansible config locations
+       ansible.builtin.debug:
+         msg:  
+           -  "{{ ansible_config_file}}"
+           -  "{{ inventory_file }}"
+           -  "{{ ansible_facts }}"

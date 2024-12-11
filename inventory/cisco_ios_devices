@@ -1,0 +1,22 @@
+[davidcox_net_devices]
+chrdavidcox_mdf ansible_host=172.23.96.23
+
+[overflow_net_devices]
+chroverflow_mdf ansible_host=172.23.64.22
+
+[distribution_net_devices]
+chrpkg_idf1 ansible_host=172.23.96.12
+
+[ios:children]
+davidcox_net_devices
+overflow_net_devices
+distribution_net_devices
+
+[ios:vars]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=cisco.ios.ios
+ansible_user=chradmin
+ansible_password=%rre!d#7#u39
+ansible_become=true
+ansible_become_method=enable
+ansible_become_password=%rre!d#7#u39

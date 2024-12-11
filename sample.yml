@@ -1,0 +1,16 @@
+---
+ios:
+  - SW1:
+       IP: 1.1.1.1
+       LOC: DC
+       typr: ios
+       interfaces:
+         - Gi1/0/1
+         - Gi1/0/2 
+  - SW2:
+       IP: 2.2.2.2
+       LOC: PKG
+       typr: ios
+       interfaces:
+         - Gi1/0/1
+         - Gi1/0/2 
