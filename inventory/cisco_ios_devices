@@ -16,7 +16,7 @@ distribution_net_devices
 ansible_connection=ansible.netcommon.network_cli
 ansible_network_os=cisco.ios.ios
 ansible_user=chradmin
-ansible_password=%rre!d#7#u39
+ansible_password=
 ansible_become=true
 ansible_become_method=enable
-ansible_become_password=%rre!d#7#u39
+ansible_become_password=
